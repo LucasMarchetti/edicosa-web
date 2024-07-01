@@ -32,7 +32,7 @@ const Carousel = () => {
       nextSlide();
     }, 5000);
     return () => clearInterval(interval);
-  }, [currentIndex]);
+  }, [nextSlide, currentIndex]);
 
   return (
     <div className="carousel">
