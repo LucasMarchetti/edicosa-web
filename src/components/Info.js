@@ -4,12 +4,11 @@ import "./Info.css"
 //Images
 import info1 from "../images/Informacion/info1.jpg"
 
-export default function () {
+export default function Info () {
     return (
         <div className="infoConteiner">
             <img 
                 src={info1}
-                
                 alt="FotoInformacion"
                 className="fotoInfo"
             />
