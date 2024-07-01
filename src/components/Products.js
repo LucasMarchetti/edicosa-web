@@ -79,7 +79,6 @@ export default function Products() {
                 <h2>PRODUCTOS</h2>
                 <h3>LOS MÁS VENDIDOS</h3>
             </div>
-            <span className="line2" />
 
             <div className="productsGrid">
                 {renderProducts(productsData)}

@@ -1,0 +1,60 @@
+
+.conteinerZContact2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.conteinerLogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.conteinerZContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+.conteinerZContact h1 {
+    margin: 0;
+}
+
+.conteinerZContact p {
+    margin: 5px;
+}
+
+.logoEdicosa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 450px;
+}
+
+.contactLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactLogo p {
+    font-size: 20px;
+}
+
+.conteinerZContact p {
+    font-size: 20px;
+}
+
+.logoContact {
+    width: 20px;
+    height: 25px;
+    margin: 10px;
+}
