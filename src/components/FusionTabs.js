@@ -4,9 +4,9 @@ import "./FusionTabs.css"
 
 //Images
 import fotoLibros from "../images/fusionTabs/libros.jpeg"
-import fotoFolletos from "../images/fusionTabs/folletos.webp"
-import fotoCalen from "../images/fusionTabs/calendario.jpeg"
-import fotoRevis from "../images/fusionTabs/revistas.jpg"
+// import fotoFolletos from "../images/fusionTabs/folletos.webp"
+// import fotoCalen from "../images/fusionTabs/calendario.jpeg"
+// import fotoRevis from "../images/fusionTabs/revistas.jpg"
 
 
 export default function FusionTabs () {
