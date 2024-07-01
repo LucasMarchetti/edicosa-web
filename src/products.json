@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "nombre" : "Calcomanias",
+        "img" : "../images/products/calcos.png"
+    },
+    {
+        "id": 2,
+        "nombre" : "Calendarios",
+        "img" : "./images/products/calendario.png"
+    },
+    {
+        "id": 3,
+        "nombre" : "Carpetas de Presentación",
+        "img" : "./images/products/carpetas.png"
+    },
+    {
+        "id": 4,
+        "nombre" : "Entradas para Eventos",
+        "img" : "./images/products/entradas.png"
+    },
+    {
+        "id": 5,
+        "nombre" : "Folletos Dipticos",
+        "img" : "./images/products/folleto-diptico.png"
+    },
+    {
+        "id": 6,
+        "nombre" : "Folletos Tripticos",
+        "img" : "./images/products/folleto-triptico.png"
+    },
+    {
+        "id": 7,
+        "nombre" : "Tarjetas Personales",
+        "img" : "./images/products/identidad.png"
+    },
+    {
+        "id": 8,
+        "nombre" : "Libros",
+        "img" : "./images/products/libros.png"
+    },
+    {
+        "id": 9,
+        "nombre" : "Pulseras para Eventos",
+        "img" : "./images/products/pulsera.png"
+    },
+    {
+        "id": 10,
+        "nombre" : "Revistas",
+        "img" : "./images/products/revista.png"
+    },
+    {
+        "id": 11,
+        "nombre" : "Sobres",
+        "img" : "./images/products/sobres.png"
+    },
+    {
+        "id": 12,
+        "nombre" : "Talonarios",
+        "img" : "./images/products/talonario.png"
+    },
+    {
+        "id": 13,
+        "nombre" : "Volantes",
+        "img" : "./images/products/volantes.png"
+    },
+    {
+        "id": 14,
+        "nombre" : "Formularios",
+        "img" : "./images/products/formulario.png"
+    }
+]
