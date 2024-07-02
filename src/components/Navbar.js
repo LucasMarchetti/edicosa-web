@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Importa Link desde react-router-dom
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../images/logo/logo2.png";
 
@@ -14,11 +14,9 @@ export default function Navbar() {
         />
         <div className="">
           <ul className="nav-menu">
-            {/* Botón de Inicio (recargar página) */}
             <li className="nav-item">
-              <a href="/" className="nav-link">Inicio</a>
+              <Link to="/" className="nav-link">Inicio</Link>
             </li>
-            {/* Botones de navegación usando Link */}
             <li className="nav-item">
               <Link to="/quienes-somos" className="nav-link">Quiénes Somos</Link>
             </li>
