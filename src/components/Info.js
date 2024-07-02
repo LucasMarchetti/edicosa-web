@@ -23,9 +23,9 @@ export default function Info () {
                 <ul>
                     <li>Imprimir libros y revistas.</li>
                     <li>Imprimir catálogos y folletos.</li>
-                    <li>Imprimir flyers, postales y carteles.</li>
+                    <li>Imprimir flayers, postales y carteles.</li>
                     <li>Libretas personalizadas y calendarios.</li>
-                    <li>Tarjetas de visita, carpetas y papel de cartas.</li>
+                    <li>Tarjetas personales, carpetas y papel de cartas.</li>
                 </ul>
                 <p>
                     En nuestros talleres utilizamos la impresión offset para las tiradas largas. Con nuestras máquinas KBA podemos imprimir catálogos, libros y revistas con la máxima calidad y de forma rápida. Estamos acostumbrados a la actual dinámica de fecha fija y siempre cumplimos con nuestros compromisos. Visita esta página para ampliar información sobre la impresión offset.
