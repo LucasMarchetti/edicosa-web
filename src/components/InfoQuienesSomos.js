@@ -8,8 +8,6 @@ import fotoMaquina from "../images/QuienesSomos/maquina1.jpg"
 import ZContact from "./ZContact"
 import Dev from "./Dev"
 
-
-
 export default function InfoQuienesSomos () {
 
     return (
@@ -52,9 +50,7 @@ export default function InfoQuienesSomos () {
                         className="fotoEdicosa2"
                     />
                 </div>
-                <h3>MÁXIMA CALIDAD AL MEJOR PRECIO</h3>
-                <p>Nuestro lema es ofrecer a nuestros clientes un servicio de máxima calidad al mejor precio. De ese modo nos hemos ganado su confianza, y el prestigio de ser un imprenta muy reconocida en el sector gráfico.</p>
-                <p>Con nuestra atención al cliente, puedes calcular el precio de impresión de tu libro, folleto o catálogo y comprobarás la competitividad de nuestras tarifas.</p>
+                <h3>Si necesitas imprimir libros, folletos, catálogos, revistas, desplegables, flayers, carpetas, etc… estamos seguros de poder darte el mejor servicio.</h3>
             </div>
             <span className="line" />
             <ZContact />
