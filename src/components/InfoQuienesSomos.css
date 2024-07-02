@@ -1,0 +1,53 @@
+
+.conteinerInfoQuienes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoQuienesConteiner {
+    width: 80%;
+    font-size: 20px;
+    -webkit-text-stroke: 1px rgba(173, 173, 173, 0.253);
+}
+
+.infoQuienesConteiner h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.fotoEdicosa {
+    width: 500px;
+    height: 500px;
+}
+
+.reales {
+    display: flex;
+}
+
+.reales2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.reales2 h3 {
+    margin-bottom: 20px;
+}
+
+.maquinasReales {
+    display: flex;
+}
+
+.maquinasReales2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.fotoEdicosa2 {
+    width: 500px;
+    height: 500px;
+    margin-left: 40px; 
+}
