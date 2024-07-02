@@ -8,6 +8,7 @@ import Info2 from "../components/Info2.js";
 import Products from "../components/Products.js";
 import FusionTabs from "../components/FusionTabs.js";
 import ZContact from "../components/ZContact.js";
+import Dev from "../components/Dev.js";
 
 export default function Home() {
     return (
@@ -21,6 +22,7 @@ export default function Home() {
         <Products />
         <FusionTabs />
         <ZContact />
+        <Dev />
       </div>
     );
   }
