@@ -12,6 +12,7 @@ export default function InfoQuienesSomos () {
 
     return (
         <div className="conteinerInfoQuienes">
+            <span className="line" style={{width: "100%", marginTop: "20px"}} />
             <div className="infoQuienesConteiner">
                 <h1>
                     ¿ Quiénes Somos ?

@@ -1,0 +1,42 @@
+.conteinerInfoMarcas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.conteinerInfoMarcas h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.marcasResmas {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    transition: transform 0.5s ease; /* Smooth slide transition */
+}
+
+.carouselItem {
+    flex: 0 0 auto;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.imgMarcas {
+    width: 300px; /* Adjust image size as needed */
+    height: 300px; /* Adjust image size as needed */
+}
+
+@media (max-width: 768px) {
+    .imgMarcas {
+        width: 200px;
+        height: 200px;
+    }
+}
