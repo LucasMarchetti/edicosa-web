@@ -1,6 +1,13 @@
+//React
 import React from 'react';
-import './Products.css'; // Importa los estilos CSS
-import productsData from '../products.json'; // Importa los datos del archivo JSON
+
+//Styles
+import './Products.css';
+
+//JSON
+import productsData from '../products.json';
+
+//Images
 import calcosImg from '../images/products/calcos.png';
 import calendarioImg from '../images/products/calendario.png';
 import carpetasImg from '../images/products/carpetas.png';
@@ -21,7 +28,6 @@ export default function Products() {
     const renderProducts = (products) => {
         return products.map((product) => (
             <div key={product.id} className="product-item">
-                {/* Utiliza las imágenes importadas estáticamente */}
                 {getImage(product.img) && (
                     <img 
                         src={getImage(product.img)} 
@@ -36,7 +42,6 @@ export default function Products() {
         ));
     };
 
-    // Función para obtener la ruta de la imagen basada en su nombre
     const getImage = (imgName) => {
         switch (imgName) {
             case '../images/products/calcos.png':

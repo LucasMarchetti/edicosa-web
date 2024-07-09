@@ -22,7 +22,6 @@
     border: 0px solid #000000;
 }
 
-
 .title {
     text-align: center;
     margin-bottom: 20px;
@@ -31,11 +30,19 @@
 .productsGrid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+    gap: 25px;
 }
 
 .product-item {
     text-align: center;
+}
+
+.product-item:hover {
+    background-color: rgb(244, 208, 63);
+    border-radius: 15px;
+    -webkit-box-shadow: inset 0px 0px 32px -14px rgba(99,99,99,1);
+    -moz-box-shadow: inset 0px 0px 32px -14px rgba(99,99,99,1);
+    box-shadow: inset 0px 0px 32px -14px rgba(99,99,99,1);
 }
 
 .product-image {
@@ -43,9 +50,14 @@
     max-width: 80px;
     height: auto;
     margin-bottom: 10px;
+    padding: 10px;
 }
 
 .product-name {
     font-size: 14px;
     margin: 0;
+}
+
+.product-name h1 {
+    margin-bottom: 0px;
 }

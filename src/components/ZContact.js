@@ -23,7 +23,7 @@ export default function ZContact () {
                 <h1>¿ Tienes alguna duda ?</h1>
                 <h2>¡Ponte en contacto con nosotros!</h2>
                     <p>Nos encontramos en Rivadavia 456. (Catamarca, Argentina)</p>
-                    <p>Lunes a Viernes de 8:00 a 13:00 horas y de 17:00 a 21 horas.</p>
+                    <p>Lunes a Viernes de 8:00 a 13:00 horas y de 17:00 a 21:00 horas.</p>
                 <div className="contactLogo">
                     <img 
                         src={logoTelefono}

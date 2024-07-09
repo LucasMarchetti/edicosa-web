@@ -32,7 +32,7 @@ export default function Contact () {
                                 alt="Telefono"
                                 className="icono-contacto"
                             />
-                            <h2>Telefono:  +54 3834 432459</h2>
+                            <h2>Telefono:  +54 3834-432459</h2>
                         </div>
                         <div className="contenedor-iconos">
                             <img 
@@ -48,7 +48,7 @@ export default function Contact () {
                                 alt="Horario"
                                 className="icono-contacto"
                                 />
-                            <h2>Horarios:  Lunes a Viernes de 8 a 13 horas y 17 a 21 horas.</h2>
+                            <h2>Horarios:  Lunes a Viernes de 8:00 a 13:00 horas y 17:00 a 21:00 horas.</h2>
                         </div>
                         <div className="contenedor-iconos">
                             <img 

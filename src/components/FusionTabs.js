@@ -1,5 +1,11 @@
+
+//React
 import React, { useState } from 'react';
+
+//Styles
 import "./FusionTabs.css";
+
+//Images
 import fotoLibros from "../images/fusionTabs/libros.jpeg";
 import fotoCalendario from "../images/fusionTabs/calendario.jpeg";
 import fotoFolletos from "../images/fusionTabs/folletos.webp";
