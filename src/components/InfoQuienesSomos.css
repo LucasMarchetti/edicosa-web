@@ -18,6 +18,33 @@
     justify-content: center;
     background-color: rgb(244, 241, 63);
     border-radius: 15px;
+    -webkit-box-shadow: inset 0px 0px 32px -14px rgba(99,99,99,1);
+    -moz-box-shadow: inset 0px 0px 32px -14px rgba(99,99,99,1);
+    box-shadow: inset 0px 0px 32px -14px rgba(99,99,99,1);
+}
+
+.infoQuienesConteiner h3 {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(244, 241, 63);
+    -webkit-box-shadow: inset 0px 0px 32px -14px rgba(99,99,99,1);
+    -moz-box-shadow: inset 0px 0px 32px -14px rgba(99,99,99,1);
+    box-shadow: inset 0px 0px 32px -14px rgba(99,99,99,1);
+}
+
+.titulo-h3 {
+    display: flex;
+}
+
+.infoQuienesConteiner h2 {
+    display: flex;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(244, 241, 63);
+    -webkit-box-shadow: inset 0px 0px 32px -14px rgba(99,99,99,1);
+    -moz-box-shadow: inset 0px 0px 32px -14px rgba(99,99,99,1);
+    box-shadow: inset 0px 0px 32px -14px rgba(99,99,99,1);
 }
 
 .fotoEdicosa {

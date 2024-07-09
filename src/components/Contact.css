@@ -19,6 +19,9 @@
     border-radius: 15px;
     font-size: 40px;
     background-color: rgb(244, 241, 63);
+    -webkit-box-shadow: inset 0px 0px 32px -14px rgba(99,99,99,1);
+    -moz-box-shadow: inset 0px 0px 32px -14px rgba(99,99,99,1);
+    box-shadow: inset 0px 0px 32px -14px rgba(99,99,99,1);
 }
 
 .contenedor-contacto {
