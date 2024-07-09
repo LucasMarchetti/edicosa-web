@@ -16,6 +16,8 @@
 .infoQuienesConteiner h1 {
     display: flex;
     justify-content: center;
+    background-color: rgb(244, 241, 63);
+    border-radius: 15px;
 }
 
 .fotoEdicosa {

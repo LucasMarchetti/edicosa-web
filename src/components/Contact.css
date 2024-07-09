@@ -1,0 +1,64 @@
+
+.conteinerContact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.titulo-contacto2 {
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-contacto{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    border-radius: 15px;
+    font-size: 40px;
+    background-color: rgb(244, 241, 63);
+}
+
+.contenedor-contacto {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.contenedor-info1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.fotoCallCenter {
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.contenedor-info2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 50px;
+}
+
+.contenedor-iconos{
+    display: flex;
+    align-items: center;
+}
+
+.icono-contacto {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.google-maps {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}

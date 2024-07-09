@@ -3,7 +3,7 @@
     width: 100%;
     margin: 0;
     top: 0;
-    background-color: rgb(244, 208, 63);
+    background-color: rgba(244, 232, 63, 0.938);
     height: 50px;
     display: flex;
     justify-content: space-around;
@@ -19,7 +19,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .Titulo .logoWsp {
