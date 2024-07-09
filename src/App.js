@@ -7,6 +7,7 @@ import Home from "./pages/Home.js"
 import QuienesSomos from "./pages/QuienesSomos.js"
 import Marcas from "./pages/Marcas.js";
 import Contacto from "./pages/Contacto.js";
+import Error from "./pages/Error.js";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route exact path="/quienes-somos" element={<QuienesSomos />} />
         <Route exact path="/marcas" element={<Marcas />} />
         <Route exact path="/contacto" element={<Contacto />} />
+        <Route path="*" element={<Error />}/>
       </Routes>
     </div>
   );

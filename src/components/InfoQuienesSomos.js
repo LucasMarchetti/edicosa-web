@@ -9,7 +9,6 @@ import ZContact from "./ZContact"
 import Dev from "./Dev"
 
 export default function InfoQuienesSomos () {
-
     return (
         <div className="conteinerInfoQuienes">
             <span className="line" style={{width: "100%", marginTop: "20px"}} />
