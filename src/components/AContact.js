@@ -36,9 +36,9 @@ export default function Navbar() {
                     alt="LogoWsp"
                     className="logoWsp"
                 />
-                <p>
-                    Escríbenos por Whatsapp
-                </p>
+                <a href="https://wa.me/5493834972609?text=Hola,%20estoy%20interesado%20en%20sus%20productos" target="_blank">
+                    Contáctanos por WhatsApp
+                </a>
             </div>
         </div>
     )
