@@ -17,7 +17,7 @@ export default function Navbar() {
                     className="logoWsp"
                 />
                 <p>
-                    +54 3834-432459
+                    +54 9 3834-432459
                 </p>
             </div>
             <div className="Titulo">
@@ -36,9 +36,14 @@ export default function Navbar() {
                     alt="LogoWsp"
                     className="logoWsp"
                 />
-                <a href="https://wa.me/5493834972609?text=Hola,%20estoy%20interesado%20en%20sus%20productos" target="_blank">
+                <a 
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://wa.me/5493834972609?text=Hola,%20estoy%20interesado%20en%20sus%20productos"
+                >
                     Contáctanos por WhatsApp
                 </a>
+
             </div>
         </div>
     )
