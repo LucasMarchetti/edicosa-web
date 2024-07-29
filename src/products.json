@@ -21,12 +21,12 @@
     },
     {
         "id": 5,
-        "nombre" : "Folletos Dipticos",
+        "nombre" : "Folletos Dípticos",
         "img" : "./images/products/folleto-diptico.png"
     },
     {
         "id": 6,
-        "nombre" : "Folletos Tripticos",
+        "nombre" : "Folletos Trípticos",
         "img" : "./images/products/folleto-triptico.png"
     },
     {
@@ -51,21 +51,16 @@
     },
     {
         "id": 11,
-        "nombre" : "Sobres",
-        "img" : "./images/products/sobres.png"
-    },
-    {
-        "id": 12,
         "nombre" : "Talonarios",
         "img" : "./images/products/talonario.png"
     },
     {
-        "id": 13,
+        "id": 12,
         "nombre" : "Volantes",
         "img" : "./images/products/volantes.png"
     },
     {
-        "id": 14,
+        "id": 13,
         "nombre" : "Formularios",
         "img" : "./images/products/formulario.png"
     }
