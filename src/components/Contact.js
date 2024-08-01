@@ -32,7 +32,7 @@ export default function Contact () {
                                 alt="Telefono"
                                 className="icono-contacto"
                             />
-                            <h2>Telefono:  +54 3834-432459</h2>
+                            <h2>Telefono:  +54 9 3834-432459</h2>
                         </div>
                         <div className="contenedor-iconos">
                             <img 
