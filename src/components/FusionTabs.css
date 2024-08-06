@@ -45,3 +45,10 @@
     margin: 10px;
     font-size: 18px;
 }
+
+@media only screen and (max-width: 750px) {
+    .imagesTabs {
+        display: none;
+    }
+
+}
