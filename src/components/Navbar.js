@@ -24,19 +24,19 @@ export default function Navbar() {
           className="logo"
         />
         {click ? (
-          <FaTimes style={{ color: "black" }} className="hamburger" onClick={handleClick} />
+          <FaBars style={{ color: "black", display: "none" }} className="hamburger" onClick={handleClick} />
           ) : (
           <FaBars style={{ color: "black" }} className="hamburger" onClick={handleClick} />
         )}
         <div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-item">
+            <li className={click ? "nav-item active" : "nav-item"}>
               <Link to="/" className="nav-link" onClick={closeMenu}>Inicio</Link>
             </li>
-            <li className="nav-item">
+            <li className={click ? "nav-item active" : "nav-item"}>
               <Link to="/quienes-somos" className="nav-link" onClick={closeMenu}>Quiénes Somos</Link>
             </li>
-            <li className="nav-item">
+            <li className={click ? "nav-item active" : "nav-item"}>
               <Link to="/contacto" className="nav-link" onClick={closeMenu}>Contacto</Link>
             </li>
           </ul>

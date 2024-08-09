@@ -27,6 +27,7 @@
 .nav-menu.active {
     position: fixed;
     top: 0px;
+    left: 0px;
     display: flex;
     flex-direction: column;
     background-color: rgba(39, 39, 39, 0.952);
@@ -62,8 +63,6 @@
 .hamburger {
     display: none;
 }
-
-
 
 @media only screen and (max-width: 975px) {
     .logo {
@@ -132,6 +131,15 @@
 
     .nav-item {
         display: none;
+    }
+    .nav-item.active {
+        display: block;
+        margin-top: 70px;
+    }
+
+    .nav-item.active .nav-link {
+        color: white;
+        font-size: 20px;
     }
 
     .hamburger {
