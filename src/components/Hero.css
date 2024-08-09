@@ -4,15 +4,28 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
     font-size: 24px;
     color: rgb(250, 200, 37);
     -webkit-text-stroke: 1px rgba(173, 173, 173, 0.253);
 }
 
+.heroConteiner h1, h3{
+    padding: 15px;
+}
+
 .line {
-    /* position: absolute;  */
-    /* left: 10%; */
     width: 60%; 
     border-bottom: 1px solid #7a7a7aa4;
     margin: 0 auto; 
+}
+
+@media only screen and (max-width: 600px) {
+    .heroConteiner h1{
+        font-size: 32px;
+    }
+
+    .heroConteiner h3{
+        font-size: 22px;
+    }
 }
