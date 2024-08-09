@@ -61,3 +61,49 @@
 .product-name h1 {
     margin-bottom: 0px;
 }
+
+@media only screen and (max-width: 500px) {
+    .productsGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 20px;
+    }
+
+    .product-image {
+        max-width: 60px;
+    }
+    
+    .product-name {
+        font-size: 10px;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 385px) {
+
+    .title h2 {
+        font-size: 40px;
+        color: rgb(230, 186, 42);
+        -webkit-text-stroke: 1px rgba(173, 173, 173, 0.253);
+    }
+    
+    .title h3 {
+        font-size: 18px;
+
+    }
+
+    .productsGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+        gap: 20px;
+    }
+
+    .product-image {
+        max-width: 50px;
+    }
+    
+    .product-name {
+        font-size: 10px;
+        margin: 0;
+    }
+}
