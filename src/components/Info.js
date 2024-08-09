@@ -1,4 +1,5 @@
 
+//Style
 import "./Info.css"
 
 //Images

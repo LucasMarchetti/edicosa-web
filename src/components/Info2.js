@@ -7,6 +7,11 @@ export default function Info2 () {
     return (
         <div className="background">
             <div className="infoConteiner2">
+                <img 
+                    src={img}
+                    alt="FotoInformacion"
+                    className="fotoInfo"
+                />
                 <div className="informacion">
                     <h2>
                         CALIDAD, PRECIO Y SERVICIO, nuestra filosofía de empresa
@@ -27,11 +32,6 @@ export default function Info2 () {
                         Nuestra política de precios se basa en ofrecer siempre el precio de impresión más barato sin que la calidad y la profesionalidad de nuestro servicio se vean afectadas.
                     </p>
                 </div>
-                <img 
-                    src={img}
-                    alt="FotoInformacion"
-                    className="fotoInfo"
-                />
             </div>
         </div>
     )
