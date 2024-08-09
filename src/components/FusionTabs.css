@@ -21,6 +21,8 @@
 }
 
 .tabs {
+    align-content: center;
+    text-align: center;
     padding-left: 20px;
     padding-right: 20px;
     cursor: pointer;
@@ -46,9 +48,65 @@
     font-size: 18px;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1100px) {
     .imagesTabs {
-        display: none;
+        width: 400px;
+        height: 400px;
     }
 
+}
+
+@media only screen and (max-width: 900px) {
+    .conteinerInfoTabs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .imagesTabs {
+        width: 300px;
+        height: 300px;
+    }
+
+    .tabs {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 505px) {
+    .tabs h2 {
+        font-size: 16px;
+    }
+
+    .infoTabs p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .tabs {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .infoTabs p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .imagesTabs {
+        width: 250px;
+        height: 250px;
+    }
+
+    .infoTabs p {
+        font-size: 12px;
+    }
+
+    .tabs h2 {
+        font-size: 14px;
+    }
 }
