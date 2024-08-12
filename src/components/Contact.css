@@ -65,3 +65,110 @@
     margin-top: 70px;
     margin-bottom: 70px;
 }
+
+.googleMaps {
+    width:800px;
+    height:600px;
+}
+
+@media only screen and (max-width: 1430px){
+    .fotoCallCenter {
+        width: 450px;
+        height: 450px;
+    }
+
+    .contenedor-iconos h2 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .fotoCallCenter {
+        width: 400px;
+        height: 400px;
+    }
+
+    .contenedor-iconos h2 {
+        font-size: 18px;
+    }
+
+    .googleMaps {
+        width:600px;
+        height:400px;
+    }
+}
+
+@media only screen and (max-width: 780px){
+    .fotoCallCenter {
+        width: 300px;
+        height: 300px;
+    }
+
+    .contenedor-iconos h2 {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 650px){
+
+    .titulo-contacto {
+        font-size: 30px;
+    }
+    .fotoCallCenter {
+        display: none;
+    }
+
+    .contenedor-iconos h2 {
+        font-size: 18px;
+    }
+
+    .googleMaps {
+        width:500px;
+        height:300px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+
+    .titulo-contacto {
+        font-size: 26px;
+    }
+
+    .contenedor-iconos h2 {
+        font-size: 16px;
+    }
+
+    .icono-contacto {
+        width: 25px;
+        height: 25px;
+    }
+
+    .googleMaps {
+        width:400px;
+        height:300px;
+    }
+}
+
+@media only screen and (max-width: 430px){
+
+    .titulo-contacto {
+        font-size: 22px;
+    }
+
+    .googleMaps {
+        width:350px;
+        height:300px;
+    }
+}
+
+@media only screen and (max-width: 365px){
+
+    .titulo-contacto {
+        font-size: 20px;
+    }
+
+    .googleMaps {
+        width:350px;
+        height:300px;
+    }
+}

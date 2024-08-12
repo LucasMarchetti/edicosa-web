@@ -64,8 +64,7 @@ export default function Contact () {
                     <iframe 
                         title="Google Maps"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.436523504622!2d-65.78081678802333!3d-28.466397675654825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942428b8cdb0433b%3A0x3c33e9434292f758!2sImprenta%20Edicosa!5e0!3m2!1ses!2sar!4v1720453032756!5m2!1ses!2sar" 
-                        width="800" 
-                        height="600" 
+                        className="googleMaps"
                         style={{border:"0"}} 
                         allowfullscreen="" 
                         loading="lazy" 
