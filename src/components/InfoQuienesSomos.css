@@ -80,3 +80,74 @@
     height: 500px;
     margin-left: 40px; 
 }
+
+@media only screen and (max-width: 1200px) {
+    .fotoEdicosa {
+        width: 400px;
+        height: 400px;
+    }
+
+    .fotoEdicosa2 {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .infoQuienesConteiner {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .reales2{
+        margin-left: 0px;
+    }
+
+    .reales {
+        flex-direction: column;
+    }
+
+    .maquinasReales {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .infoQuienesConteiner h1 {
+        font-size: 34px;
+    }
+
+    .fotoEdicosa2 {
+        margin: 0px;
+    }
+
+    .fotoEdicosa {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .fotoEdicosa {
+        width: 350px;
+        height: 350px;
+    }
+
+    .fotoEdicosa2 {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .fotoEdicosa {
+        width: 300px;
+        height: 300px;
+    }
+
+    .fotoEdicosa2 {
+        width: 300px;
+        height: 300px;
+    }
+}
