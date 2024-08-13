@@ -29,7 +29,7 @@ export default function FusionTabs() {
                     <h2>Catálogos y Revistas</h2>
                 </div>
                 <div className={`tabs ${activeTab === 2 ? 'active' : ''}`} onClick={() => handleTabClick(2)}>
-                    <h2>Folletos, Flayers y Carteles</h2>
+                    <h2>Folletos y Carteles</h2>
                 </div>
                 <div className={`tabs ${activeTab === 3 ? 'active' : ''}`} onClick={() => handleTabClick(3)}>
                     <h2>Tarjetas, Calendarios y Libretas</h2>
@@ -62,7 +62,7 @@ export default function FusionTabs() {
                     )}
                     {activeTab === 2 && (
                         <div>
-                            <p>La impresión de flayers, folletos, carteles y desplegables es una opción muy económica para dar a conocer los servicios o productos de una empresa. En Edicosa tenemos una amplia experiencia en la impresión de estos productos y estamos a tu disposición para asesorarte en la elección del papel, en las forma de plegado y en todos los detalles necesarios para que tu producto alcance su objetivo comunicativos.</p>
+                            <p>La impresión de folletos, carteles y desplegables es una opción muy económica para dar a conocer los servicios o productos de una empresa. En Edicosa tenemos una amplia experiencia en la impresión de estos productos y estamos a tu disposición para asesorarte en la elección del papel, en las forma de plegado y en todos los detalles necesarios para que tu producto alcance su objetivo comunicativos.</p>
                             <p>Los procesos de impresión, manipulación, corte, doblado, grapado, encolado, etc, se efectúan íntegramente en nuestra imprenta en Catamarca, lo que redunda en unos precios más competitivos y en una mayor rapidez en los tiempos de fabricación y entrega. El pedido que nos hagas, te será entregado a los pocos días en cualquier lugar de Argentina.</p>
                             <p></p>
                         </div>
