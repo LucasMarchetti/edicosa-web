@@ -9,7 +9,7 @@ export default function AContact(){
       <div className="topbar__inner container">
         <a className="topbar__item" href="tel:+543834432459">
           <img src={logoTelefono} alt="Teléfono" className="topbar__icon topbar__icon--mono"/>
-          <span>+54 3834 432459</span>
+          <span>+543834972609</span>
         </a>
 
         <a className="topbar__item" href="mailto:edicosa@yahoo.com.ar">
@@ -19,7 +19,7 @@ export default function AContact(){
 
         <a
           className="topbar__cta"
-          href="https://wa.me/543834432459?text=Hola%20Edicosa%2C%20quisiera%20hacer%20una%20consulta"
+          href="https://wa.me/+543834972609?text=Hola%20Edicosa%2C%20quisiera%20hacer%20una%20consulta"
           target="_blank" rel="noreferrer noopener" aria-label="Chatear por WhatsApp"
         >
           <img src={logoWsp} alt="" className="topbar__icon" aria-hidden="true"/>
