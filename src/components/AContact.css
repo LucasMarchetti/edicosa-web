@@ -1,27 +1,48 @@
+.topbar{ width:100%; background:#0b0f19; color:#e5e7eb; }
+.topbar__inner{
+  display:flex; align-items:center; justify-content:center; gap:24px;
+  min-height:44px; padding:6px 10px; flex-wrap:wrap;
+}
+.topbar__item{
+  display:inline-flex; align-items:center; gap:8px; font-size:14px;
+  color:#e5e7eb; text-decoration:none; white-space: nowrap;
+}
+.topbar__item:hover{ text-decoration:underline; }
 
-.contenedorA {
-    width: 100%;
-    margin: 0;
-    top: 0;
-    background-color: rgba(244, 232, 63, 0.938);
-    height: 50px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+/* Iconos: tel/email monocromo; WhatsApp a color */
+.topbar__icon{ width:18px; height:18px; }
+.topbar__icon--mono{  opacity:.92; }
+
+/* WhatsApp minimal */
+.topbar__cta{
+  display:inline-flex; align-items:center; gap:8px; white-space: nowrap;
+  padding:6px 10px; border-radius:8px; font-weight:600; text-decoration:none;
+  background: transparent; color:#ffffff;
+  box-shadow:none;
+}
+.topbar__cta:hover,
+.topbar__cta:focus-visible{
+  background: rgba(255,255,255,.08);
+  border-color: rgba(255,255,255,.35);
+  outline: none;
 }
 
-.Titulo p {
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.Titulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.Titulo .logoWsp {
-    width: 30px;
-    padding-right: 10px;
+/* -------- Mobile: en una sola fila -------- */
+@media (max-width: 720px){
+  .topbar__inner{
+    flex-wrap: nowrap;              /* no salta de línea */
+    gap:6px;
+    justify-content:center;
+  }
+  .topbar__icon{ width:16px; height:16px; }
+  .topbar__item, .topbar__cta{
+    padding:0; font-size:12.5px;    /* compacta */
+    flex: 0 1 auto;                 /* permite encoger */
+  }
+  /* texto truncado para que entren los 3 */
+  .topbar__item span, .topbar__cta span{
+    display:inline-block; max-width:28vw;
+    overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+  }
+  .topbar__cta{ border-radius:6px; padding:3px 6px; order:0; } /* quita el orden que lo mandaba abajo */
 }

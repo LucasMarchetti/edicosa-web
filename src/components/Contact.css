@@ -1,67 +1,73 @@
-
-.conteinerContact{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 20px;
+/* Sección y título */
+.contactSection{ padding: 32px 0 44px; }
+.titleWrap{ text-align:center; }
+.title{
+  position:relative;
+  display:inline-block;
+  background:#fff; color:#0a0e1a;
+  border:1px solid var(--line);
+  border-radius:16px; padding:14px 18px;
+  box-shadow: var(--shadow);
+  font-size: clamp(22px,3.6vw,30px);
+  letter-spacing:.2px; margin:0;
+}
+.title::after{
+  content:""; position:absolute; left:16px; right:16px; bottom:-1px; height:3px;
+  background: linear-gradient(90deg, var(--brand) 0 25%, #0b0f19 25% 75%, var(--brand) 75% 100%);
+  border-bottom-left-radius:6px; border-bottom-right-radius:6px;
 }
 
-.titulo-contacto2 {
-    display: flex;
-    justify-content: center;
+/* Grid principal */
+.grid{
+  display:grid; grid-template-columns: 1.1fr 1fr; gap:24px; align-items:start;
+  margin-top: 22px;
+}
+.media{ margin:0; }
+.fotoCallCenter{
+  width:100%; height:100%; max-height: 440px; object-fit: cover;
+  border-radius: 14px; box-shadow: var(--shadow);
 }
 
-.titulo-contacto{
-    display: flex;
-    justify-content: center;
-    width: 70%;
-    border-radius: 15px;
-    font-size: 40px;
-    background-color: rgb(244, 241, 63);
-    -webkit-box-shadow: inset 0px 0px 32px -14px rgba(99,99,99,1);
-    -moz-box-shadow: inset 0px 0px 32px -14px rgba(99,99,99,1);
-    box-shadow: inset 0px 0px 32px -14px rgba(99,99,99,1);
+/* Tarjeta de datos */
+.contactCard{
+  background:#fff; border:1px solid var(--line); border-radius:14px;
+  padding:16px; box-shadow: var(--shadow);
+}
+.iconRow{
+  display:flex; align-items:center; gap:12px;
+  padding:12px; border:1px solid var(--line); border-radius:12px;
+  text-decoration:none; color:inherit; transition: background .15s, transform .12s;
+  margin-bottom:10px; background:#fff;
+}
+.iconRow:hover{ background:#f8fafc; transform: translateY(-1px); }
+.icono-contacto{ width:22px; height:22px; }
+.rowText{ display:flex; flex-direction:column; }
+.label{ font-size:12px; color:#64748b; }
+.rowText strong{ font-size:16px; color:#0a0e1a; }
+
+/* Acciones */
+.contactActions{ display:flex; gap:10px; margin-top:8px; }
+.contactActions .btn{ flex:0 0 auto; }
+.contactActions .btn.secondary{ background:#fff; }
+
+/* Mapa en tarjeta */
+.mapCard{
+  margin-top:28px; background:#fff; border:1px solid var(--line);
+  border-radius:14px; box-shadow: var(--shadow);
+}
+.mapHeader{ padding:12px 16px; border-bottom:1px solid var(--line); }
+.mapHeader h2{ margin:0; font-size:18px; color:#0a0e1a; }
+.mapWrap{ padding:12px; }
+.map{ width:100%; height: 420px; border:0; border-radius:10px; box-shadow: var(--shadow); }
+
+/* Accesibilidad */
+.sr-only{
+  position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0;
 }
 
-.contenedor-contacto {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-}
-
-.contenedor-info1 {
-    display: flex;
-    flex-direction: column;
-}
-
-.fotoCallCenter {
-    width: 500px;
-    height: 500px;
-    border-radius: 20px;
-}
-
-.contenedor-info2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-left: 50px;
-}
-
-.contenedor-iconos{
-    display: flex;
-    align-items: center;
-}
-
-.icono-contacto {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-}
-
-.google-maps {
-    display: flex;
-    justify-content: center;
-    margin-top: 70px;
-    margin-bottom: 70px;
+/* Responsive */
+@media (max-width: 980px){
+  .grid{ grid-template-columns: 1fr; }
+  .fotoCallCenter{ max-height: 320px; }
+  .map{ height: 360px; }
 }

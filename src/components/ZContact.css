@@ -1,60 +1,9 @@
-
-.conteinerZContact2 {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    width: 100%;
-}
-
-.conteinerLogo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-}
-
-.conteinerZContact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-    margin-left: 50px;
-}
-
-.conteinerZContact h1 {
-    margin: 0;
-}
-
-.conteinerZContact p {
-    margin: 5px;
-}
-
-.logoEdicosa {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 150px;
-    width: 450px;
-}
-
-.contactLogo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contactLogo p {
-    font-size: 20px;
-}
-
-.conteinerZContact p {
-    font-size: 20px;
-}
-
-.logoContact {
-    width: 20px;
-    height: 25px;
-    margin: 10px;
-}
+.conteinerZContact2{ background:#0b0f19; color:#e5e7eb; }
+.zc__inner{ display:flex; gap:32px; align-items:center; justify-content:center; padding: 28px 16px; }
+.logoEdicosa{ width:auto; height:56px; }
+.zc__copy{ text-align:left; }
+.zc__copy h1{ margin:0; font-size:22px; color:#fff; }
+.zc__copy h2{ margin:6px 0 8px; font-size:16px; color:#cbd5e1; }
+.zc__row{ display:flex; align-items:center; gap:10px; }
+.logoContact{ width:18px; height:18px; }
+@media (max-width: 900px){ .zc__inner{ flex-direction:column; text-align:center; } .zc__copy{ text-align:center; } }

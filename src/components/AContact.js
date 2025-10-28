@@ -1,46 +1,31 @@
+import "./AContact.css";
+import logoWsp from "../images/logo/logoWsp.png";
+import logoEmail from "../images/logo/logoEmail.png";
+import logoTelefono from "../images/logo/logoTelefono.png";
 
-import "./AContact.css"
+export default function AContact(){
+  return (
+    <div className="topbar" role="banner">
+      <div className="topbar__inner container">
+        <a className="topbar__item" href="tel:+543834432459">
+          <img src={logoTelefono} alt="Teléfono" className="topbar__icon topbar__icon--mono"/>
+          <span>+54 3834 432459</span>
+        </a>
 
-//Images
-import logoWsp from "../images/logo/logoWsp.png"
-import logoEmail from "../images/logo/logoEmail.png"
-import logoTelefono from "../images/logo/logoTelefono.png"
+        <a className="topbar__item" href="mailto:edicosa@yahoo.com.ar">
+          <img src={logoEmail} alt="Email" className="topbar__icon topbar__icon--mono"/>
+          <span>edicosa@yahoo.com.ar</span>
+        </a>
 
-export default function Navbar() {
-
-    return (
-        <div className="contenedorA">
-            <div className="Titulo">
-                <img 
-                    src={logoTelefono}
-                    alt="logoTelefono"
-                    className="logoWsp"
-                />
-                <p>
-                    +54 3834-432459
-                </p>
-            </div>
-            <div className="Titulo">
-                <img 
-                    src={logoEmail}
-                    alt="LogoWsp"
-                    className="logoWsp"
-                />
-                <p>
-                    edicosa@yahoo.com.ar
-                </p>
-            </div>
-            <div className="Titulo">
-                <img 
-                    src={logoWsp}
-                    alt="LogoWsp"
-                    className="logoWsp"
-                />
-                <p>
-                    Escríbenos por Whatsapp
-                </p>
-            </div>
-        </div>
-    )
-} 
-
+        <a
+          className="topbar__cta"
+          href="https://wa.me/543834432459?text=Hola%20Edicosa%2C%20quisiera%20hacer%20una%20consulta"
+          target="_blank" rel="noreferrer noopener" aria-label="Chatear por WhatsApp"
+        >
+          <img src={logoWsp} alt="" className="topbar__icon" aria-hidden="true"/>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  );
+}

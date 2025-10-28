@@ -15,8 +15,8 @@ export default function Home() {
       <div>
         <AContact />
         <Navbar />
-        <Carrousel />
         <Hero />
+        <Carrousel />
         <Info />
         <Info2 />
         <Products />

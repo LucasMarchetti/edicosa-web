@@ -1,46 +1,22 @@
-
-//Styles
-import "./ZContact.css"
-
-//Images
-import logoEmail from "../images/logo/logoEmail.png"
-import logoTelefono from "../images/logo/logoTelefono.png"
-import logo from "../images/logo/logo2.png"
+import "./ZContact.css";
+import logoEmail from "../images/logo/logoEmail.png";
+import logoTelefono from "../images/logo/logoTelefono.png";
+import logo from "../images/logo/logo2.png";
 
 
-export default function ZContact () {
-
-    return (
-        <div className="conteinerZContact2">
-            <div className="conteinerLogo">
-                <img 
-                    src={logo}
-                    alt="logoEdicosa"
-                    className="logoEdicosa"
-                />
-            </div>
-            <div className="conteinerZContact">
-                <h1>¿ Tienes alguna duda ?</h1>
-                <h2>¡Ponte en contacto con nosotros!</h2>
-                    <p>Nos encontramos en Rivadavia 456. (Catamarca, Argentina)</p>
-                    <p>Lunes a Viernes de 8:00 a 13:00 horas y de 17:00 a 21:00 horas.</p>
-                <div className="contactLogo">
-                    <img 
-                        src={logoTelefono}
-                        alt="logoTelefono"
-                        className="logoContact"
-                    />
-                    <p> +54 3834-432459</p>
-                </div>
-                <div className="contactLogo">
-                    <img
-                        src={logoEmail}
-                        alt="logoTelefono"
-                        className="logoContact"
-                    />
-                    <p> edicosa@yahoo.com.ar</p>
-                </div>
-            </div>
-        </div>
-    )
+export default function ZContact(){
+return (
+<footer className="conteinerZContact2" role="contentinfo">
+<div className="container zc__inner">
+<img src={logo} alt="Edicosa" className="logoEdicosa"/>
+<div className="zc__copy">
+<h1>¿Tenés dudas?</h1>
+<h2>Contactanos y cotizá tu trabajo</h2>
+<p>Rivadavia 456 · Catamarca, Argentina</p>
+<div className="zc__row"><img src={logoTelefono} alt="Teléfono" className="logoContact"/><p>+54 3834 432459</p></div>
+<div className="zc__row"><img src={logoEmail} alt="Email" className="logoContact"/><p>edicosa@yahoo.com.ar</p></div>
+</div>
+</div>
+</footer>
+);
 }

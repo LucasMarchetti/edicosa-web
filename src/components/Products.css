@@ -1,63 +1,79 @@
+#productos{}
+.productsContainer{ padding: 28px 0 18px; }
 
-.productsContainer {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    margin-top: 70px;
+.title{ text-align:center; margin-bottom: 18px; }
+.title h2{
+  margin:0; color:#0a0e1a; letter-spacing:.2px;
+  font-size: clamp(22px, 3.2vw, 32px);
+}
+.subtitle{ margin:6px 0 0; color: var(--muted); font-size: 14px; }
+
+/* Grid denso y consistente */
+.productsGrid{
+  display:grid; gap:14px;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  align-items:stretch;
+  margin-top: 10px;
 }
 
-.title h2 {
-    font-size: 50px;
-    color: rgb(230, 186, 42);
-    -webkit-text-stroke: 1px rgba(173, 173, 173, 0.253);
+/* Card compacta y accesible */
+.card{
+  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px;
+  background:#fff; border:1px solid var(--line); border-radius:12px;
+  padding:14px; text-align:center; box-shadow: var(--shadow);
+  transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+  outline: none;
+}
+.card:hover{ transform: translateY(-2px); box-shadow: 0 10px 30px rgba(2,8,23,.10); border-color:#e2e8f0; }
+.card:focus-visible{ box-shadow: 0 0 0 3px rgba(242,196,3,.35); }
+
+/* Imagen controlada por breakpoints para reducir scroll */
+.product-image{
+  width:88px; height:88px; object-fit: contain; object-position:center;
+  aspect-ratio: 1; display:block;
+}
+.product-name{
+  font-size: 13.5px; font-weight:600; color:#111; margin:0; line-height:1.35;
+  max-width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 
-.title h3 {
-    padding: 10px;
-    background-color: rgb(244, 208, 63);
-    margin-bottom: 0;
-    border-radius: 15px 15px 0px 0px;
-    -moz-border-radius: 15px 15px 0px 0px;
-    -webkit-border-radius: 15px 15px 0px 0px;
-    border: 0px solid #000000;
+.vp-center{
+  text-align:center;
+  margin: 0 auto 15px;
+  inline-size: 100%;
 }
 
-.title {
-    text-align: center;
-    margin-bottom: 20px;
+/* --------- Breakpoints --------- */
+@media (max-width: 1200px){
+  .productsGrid{ grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap:12px; }
+  .product-image{ width:82px; height:82px; }
+}
+@media (max-width: 900px){
+  .productsGrid{ grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap:10px; }
+  .card{ padding:12px; border-radius:10px; }
+  .product-image{ width:72px; height:72px; }
+  .product-name{ font-size:13px; }
+}
+@media (max-width: 640px){
+  /* 3–4 columnas según ancho; imágenes pequeñas para menos scroll */
+  .productsGrid{ grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap:8px; }
+  .card{ padding:10px; }
+  .product-image{ width:56px; height:56px; }
+  .product-name{ font-size:12px; }
 }
 
-.productsGrid {
+/* Modo muy estrecho: mantiene tres en fila y evita columnas de 1 */
+@media (max-width: 380px){
+  .productsGrid{ grid-template-columns: repeat(3, minmax(0,1fr)); }
+}
+
+@media (max-width: 900px){
+  .vp-center{
+    inline-size: 100vw;
+    margin-inline: calc(50% - 50vw);
+    padding-inline: 16px;        /* respiración en bordes */
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 25px;
-}
-
-.product-item {
+    place-items: center;
     text-align: center;
-}
-
-.product-item:hover {
-    background-color: rgb(244, 208, 63);
-    border-radius: 15px;
-    -webkit-box-shadow: inset 0px 0px 32px -14px rgba(99,99,99,1);
-    -moz-box-shadow: inset 0px 0px 32px -14px rgba(99,99,99,1);
-    box-shadow: inset 0px 0px 32px -14px rgba(99,99,99,1);
-}
-
-.product-image {
-    width: 100%;
-    max-width: 80px;
-    height: auto;
-    margin-bottom: 10px;
-    padding: 10px;
-}
-
-.product-name {
-    font-size: 14px;
-    margin: 0;
-}
-
-.product-name h1 {
-    margin-bottom: 0px;
+  }
 }

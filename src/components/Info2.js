@@ -1,38 +1,41 @@
+import "./Info2.css";
+import img from "../images/Informacion/cargando-planchas.webp";
 
-import "./Info2.css"
+export default function Info2() {
+  return (
+    <section className="infoSection alt container" aria-labelledby="info-2-title">
+      <div className="infoGrid infoGrid--reverse">
+        <div className="copy">
+          <span className="eyebrow">Filosofía de trabajo</span>
+          <h2 id="info-2-title">Calidad, precio y servicio</h2>
 
-import img from "../images/Informacion/cargando-planchas.webp"
+          <p className="lead">
+            Dos décadas de procesos medibles y equipos especializados. Controles
+            previos, materiales correctos y acabado consistente.
+          </p>
 
-export default function Info2 () {
-    return (
-        <div className="background">
-            <div className="infoConteiner2">
-                <div className="informacion">
-                    <h2>
-                        CALIDAD, PRECIO Y SERVICIO, nuestra filosofía de empresa
-                    </h2>
-                    <p>
-                        Edicosa se ha ganado un prestigio que nos sitúa entre las empresas más destacadas del sector gráfico en nuestro país. En gran medida gracias a que llevamos dos décadas aplicando una filosofía de empresa basada en tres claves: alta calidad, precios económicos y servicio profesional.
-                    </p>
-                    <p>
-                        La calidad de la impresión empieza con una revisión profesional de los archivos PDF. Nuestros especialistas revisan gratuitamente el material que nos envías y te asesoran ante la necesidad de algún cambio.
-                    </p>
-                    <p>
-                        En la imprenta somos muy conscientes de la importancia que tiene imprimir bien un libro, un catálogo o un folleto promocional. Detrás de estos soportes comunicativos, los escritores, los fotógrafos, los publicistas o los empresarios han invertido muchas horas en su concepción y puesta en marcha, por lo que consideramos que es nuestra obligación estar a la altura de sus expectativas.
-                    </p>
-                    <p>
-                        Para tu confianza, contamos con diversos sellos de calidad europeos que nos han sido otorgados: Certificados ISO 9001 y 14001, y sello de calidad ecológica y medioambiental FSC. Además contamos con un equipo de 26 profesionales muy comprometidos con su trabajo, y que tiene gran experiencia en todas las áreas de impresión y fabricación de un libro: preimpresión, maquetación, fotomecánica, encuadernación, etc. Nuestras instalaciones están equipadas con maquinaria de última generación que garantiza el máximo cuidado en todos los procesos, detalles y acabados.
-                    </p>
-                    <p>
-                        Nuestra política de precios se basa en ofrecer siempre el precio de impresión más barato sin que la calidad y la profesionalidad de nuestro servicio se vean afectadas.
-                    </p>
-                </div>
-                <img 
-                    src={img}
-                    alt="FotoInformacion"
-                    className="fotoInfo"
-                />
-            </div>
+          <p>
+            Revisamos PDF de forma profesional y asesoramos sin cargo. Entendemos el
+            valor de cada obra y cuidamos la reproducción de color y detalle.
+          </p>
+
+          <p>
+            Contamos con certificaciones ISO 9001 y 14001 y manejo responsable de
+            materiales (FSC). Equipo de preimpresión, fotomecánica y encuadernación
+            con experiencia comprobable.
+          </p>
+
+          <p>
+            Política de precios transparente. Optimizamos tiradas sin sacrificar
+            la calidad ni la confiabilidad del servicio.
+          </p>
         </div>
-    )
+
+        <figure className="media">
+          <img src={img} alt="Planchas y control de proceso" className="fotoInfo" />
+          <figcaption className="sr-only">Control de planchas y procesos</figcaption>
+        </figure>
+      </div>
+    </section>
+  );
 }
