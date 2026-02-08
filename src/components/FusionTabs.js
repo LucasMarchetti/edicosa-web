@@ -1,9 +1,9 @@
 import { useState, useCallback } from "react";
 import "./FusionTabs.css";
 
-import fotoLibros from "../images/fusionTabs/libros.jpeg";
-import fotoCalendario from "../images/fusionTabs/calendario.jpeg";
-import fotoFolletos from "../images/fusionTabs/folletos.webp";
+import fotoLibros from "../images/fusionTabs/libros.jpg";
+import fotoCalendario from "../images/fusionTabs/calendario.jpg";
+import fotoFolletos from "../images/fusionTabs/folletos.jpg";
 import fotoRevistas from "../images/fusionTabs/revistas.jpg";
 
 const TABS = [
@@ -13,16 +13,20 @@ const TABS = [
     content: (
       <>
         <p>
-          Imprimir libros es nuestra pasión. Atendemos editoriales, instituciones y autores con tiradas cortas o largas, manteniendo costo y calidad.
+          Imprimir libros es nuestra pasión. Atendemos editoriales,
+          instituciones y autores con tiradas cortas o largas, manteniendo costo
+          y calidad.
         </p>
         <p>
-          Podés calcular y encargar tu pedido online. Si el producto es complejo o no figura en la web, te asesoramos y cotizamos a medida.
+          Podés calcular y encargar tu pedido online. Si el producto es complejo
+          o no figura en la web, te asesoramos y cotizamos a medida.
         </p>
         <p>
-          Color o B/N en múltiples formatos, con acabados profesionales. Cuidamos consistencia de color, registro y terminaciones.
+          Color o B/N en múltiples formatos, con acabados profesionales.
+          Cuidamos consistencia de color, registro y terminaciones.
         </p>
       </>
-    )
+    ),
   },
   {
     label: "Catálogos y Revistas",
@@ -30,13 +34,15 @@ const TABS = [
     content: (
       <>
         <p>
-          Especialistas en material editorial y promocional para ferias y ventas. Cumplimos plazos exigentes con control de calidad.
+          Especialistas en material editorial y promocional para ferias y
+          ventas. Cumplimos plazos exigentes con control de calidad.
         </p>
         <p>
-          Tiradas cortas: agilidad y personalización sin stock. Tiradas largas: optimización de papel, pliegos y acabados para mejor costo.
+          Tiradas cortas: agilidad y personalización sin stock. Tiradas largas:
+          optimización de papel, pliegos y acabados para mejor costo.
         </p>
       </>
-    )
+    ),
   },
   {
     label: "Folletos y Carteles",
@@ -44,13 +50,15 @@ const TABS = [
     content: (
       <>
         <p>
-          Folletos, flyers, desplegables y carteles con asesoría en papeles, plegados y terminaciones para lograr el objetivo comunicacional.
+          Folletos, flyers, desplegables y carteles con asesoría en papeles,
+          plegados y terminaciones para lograr el objetivo comunicacional.
         </p>
         <p>
-          Producción, manipulado y logística integrados para precio competitivo y entrega rápida en todo el país.
+          Producción, manipulado y logística integrados para precio competitivo
+          y entrega rápida en todo el país.
         </p>
       </>
-    )
+    ),
   },
   {
     label: "Tarjetas y Calendarios",
@@ -58,14 +66,16 @@ const TABS = [
     content: (
       <>
         <p>
-          Tarjetas, postales, calendarios, agendas y libretas. Materiales y acabados de alto estándar para transmitir profesionalismo.
+          Tarjetas, postales, calendarios, agendas y libretas. Materiales y
+          acabados de alto estándar para transmitir profesionalismo.
         </p>
         <p>
-          Revisión de archivos y recomendaciones de sustratos y barnices para durabilidad y buena presencia.
+          Revisión de archivos y recomendaciones de sustratos y barnices para
+          durabilidad y buena presencia.
         </p>
       </>
-    )
-  }
+    ),
+  },
 ];
 
 export default function FusionTabs() {
@@ -75,7 +85,8 @@ export default function FusionTabs() {
     if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(e.key)) return;
     e.preventDefault();
     if (e.key === "ArrowRight") setActive((i) => (i + 1) % TABS.length);
-    if (e.key === "ArrowLeft") setActive((i) => (i - 1 + TABS.length) % TABS.length);
+    if (e.key === "ArrowLeft")
+      setActive((i) => (i - 1 + TABS.length) % TABS.length);
     if (e.key === "Home") setActive(0);
     if (e.key === "End") setActive(TABS.length - 1);
   }, []);
@@ -84,7 +95,12 @@ export default function FusionTabs() {
 
   return (
     <section className="fusion container" aria-label="Líneas de trabajo">
-      <div className="tabsBar" role="tablist" aria-label="Categorías" onKeyDown={onKey}>
+      <div
+        className="tabsBar"
+        role="tablist"
+        aria-label="Categorías"
+        onKeyDown={onKey}
+      >
         {TABS.map((t, i) => (
           <button
             key={t.label}

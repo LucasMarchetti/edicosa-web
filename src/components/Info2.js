@@ -1,9 +1,12 @@
 import "./Info2.css";
-import img from "../images/Informacion/cargando-planchas.webp";
+import img from "../images/Informacion/info2.jpg";
 
 export default function Info2() {
   return (
-    <section className="infoSection alt container" aria-labelledby="info-2-title">
+    <section
+      className="infoSection alt container"
+      aria-labelledby="info-2-title"
+    >
       <div className="infoGrid infoGrid--reverse">
         <div className="copy">
           <span className="eyebrow">Filosofía de trabajo</span>
@@ -15,14 +18,15 @@ export default function Info2() {
           </p>
 
           <p>
-            Revisamos PDF de forma profesional y asesoramos sin cargo. Entendemos el
-            valor de cada obra y cuidamos la reproducción de color y detalle.
+            Revisamos PDF de forma profesional y asesoramos sin cargo.
+            Entendemos el valor de cada obra y cuidamos la reproducción de color
+            y detalle.
           </p>
 
           <p>
-            Contamos con certificaciones ISO 9001 y 14001 y manejo responsable de
-            materiales (FSC). Equipo de preimpresión, fotomecánica y encuadernación
-            con experiencia comprobable.
+            Contamos con certificaciones ISO 9001 y 14001 y manejo responsable
+            de materiales (FSC). Equipo de preimpresión, fotomecánica y
+            encuadernación con experiencia comprobable.
           </p>
 
           <p>
@@ -32,8 +36,14 @@ export default function Info2() {
         </div>
 
         <figure className="media">
-          <img src={img} alt="Planchas y control de proceso" className="fotoInfo" />
-          <figcaption className="sr-only">Control de planchas y procesos</figcaption>
+          <img
+            src={img}
+            alt="Planchas y control de proceso"
+            className="fotoInfo"
+          />
+          <figcaption className="sr-only">
+            Control de planchas y procesos
+          </figcaption>
         </figure>
       </div>
     </section>
